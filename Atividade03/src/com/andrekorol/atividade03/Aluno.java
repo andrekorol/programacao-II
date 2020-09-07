@@ -20,15 +20,15 @@ public class Aluno {
         this.cpf = cpf;
     }
 
+    public String info() {
+        return this.nome + ", " + (this.bolsista ? "" : "nao ") + "bolsista, matricula " + this.matricula;
+    }
+
     public void modificaBolsa() {
         this.bolsista = !this.bolsista;
     }
 
     public void atualizaMatricula(long novaMatricula) {
         this.matricula = novaMatricula;
-    }
-
-    public String info() {
-        return this.nome + ", " + (this.bolsista ? "" : "nao ") + "bolsista, matricula " + this.matricula;
     }
 }

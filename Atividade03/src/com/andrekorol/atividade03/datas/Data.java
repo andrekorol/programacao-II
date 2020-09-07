@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 
-public final class DataNascimento {
+public final class Data {
     public static LocalDate gerar(String data) {
         // Inicializa uma data de nascimento de classe LocalDate
         LocalDate dataNascimento = null;
