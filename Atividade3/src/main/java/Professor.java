@@ -1,5 +1,4 @@
-package com.andrekorol.atividade03;
-
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -9,10 +8,10 @@ public class Professor {
     LocalDate dataContratacao;
     String cpf;
     List<String> disciplinas;
-    double salario;
+    BigDecimal salario;
 
     // Constructor
-    public Professor(String nome, char sexo, LocalDate dataContratacao, String cpf, List<String> disciplinas, double salario) {
+    public Professor(String nome, char sexo, LocalDate dataContratacao, String cpf, List<String> disciplinas, BigDecimal salario) {
         this.nome = nome;
         this.sexo = sexo;
         this.dataContratacao = dataContratacao;
@@ -35,7 +34,7 @@ public class Professor {
         this.disciplinas.remove(disciplina);
     }
 
-    public void aplicaAumento(double valorAumento) {
-        this.salario += valorAumento;
+    public void aplicaAumento(BigDecimal valorAumento) {
+        this.salario = this.salario.add(valorAumento);
     }
 }

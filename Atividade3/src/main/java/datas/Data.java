@@ -1,4 +1,4 @@
-package com.andrekorol.atividade03.datas;
+package datas;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
